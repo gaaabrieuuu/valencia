@@ -25,3 +25,12 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .button {
+    @apply flex items-center justify-center;
+    @apply shadow-xl bg-brown-400 font-semibold hover:bg-brown-300;
+    @apply hover:text-brown-700 text-xl tracking-widest;
+    @apply duration-300 transition ease-out cursor-pointer;
+  }
+}
