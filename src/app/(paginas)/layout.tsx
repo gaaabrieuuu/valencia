@@ -1,6 +1,10 @@
 import Page from "@/components/template/Page";
 
-const Layout = (props: any) => {
+export interface LayoutProps {
+  children: React.ReactNode;
+}
+
+const Layout = (props: LayoutProps) => {
   return <Page>{props.children}</Page>;
 };
 
