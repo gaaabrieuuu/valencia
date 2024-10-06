@@ -1,7 +1,7 @@
-import React from "react";
+import Header from "./Header";
 
 export interface PaginaProps {
-  children: React.ReactNode;
+  children: any;
   className?: string;
 }
 

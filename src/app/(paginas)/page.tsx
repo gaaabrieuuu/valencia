@@ -8,7 +8,7 @@ import CopyBtn from "@/components/shared/CopyBtn";
 import Logo from "@/components/shared/Logo";
 import Modal from "@/components/template/Modal";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { MouseEvent, useEffect, useRef, useState } from "react";
 
 const Home = () => {
   const [mouseCoordinates, setMouseCoordinates] = useState({ x: 0, y: 0 });
@@ -17,7 +17,7 @@ const Home = () => {
   const backgroundRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
+    const handleMouseMove = (e: any) => {
       setMouseCoordinates({ x: e.clientX, y: e.clientY });
     };
 
