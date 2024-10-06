@@ -22,9 +22,7 @@ const CopyBtn = (props: CopyBtnProps) => {
         setHovering(false);
         setIsCopied(false);
       }}
-      className="flex items-center justify-center px-4 py-3 bg-brown rounded-full 
-      font-semibold tracking-widest shadow-xl hover:text-light-brown-foreground
-    hover:bg-light-brown ease-out duration-300 transition cursor-pointer text-xl"
+      className="button px-4 py-3 rounded-full"
     >
       {!hovering ? (
         <span>{props.label}</span>

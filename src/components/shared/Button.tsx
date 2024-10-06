@@ -1,12 +1,16 @@
 export interface ButtonProps {
   className?: React.ComponentProps<"div">["className"];
   label: string;
+  onClick?: () => void;
 }
 
 const Button = (props: ButtonProps) => {
   return (
-    <div className={`flex items-center justify-center w-36 h-14 shadow-xl bg-brown rounded-md text-xl ${props.className}`}>
-      <span className="uppercase font-semibold tracking-widest">{props.label}</span>
+    <div
+      onClick={props.onClick}
+      className={`button w-36 h-14 rounded-md uppercase ${props.className}`}
+    >
+      <span>{props.label}</span>
     </div>
   );
 };
