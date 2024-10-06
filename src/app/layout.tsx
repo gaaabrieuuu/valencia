@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-import { Montserrat, Maven_Pro } from "next/font/google";
+import { Maven_Pro } from "next/font/google";
 
 const font = Maven_Pro({
   subsets: ["latin"],
