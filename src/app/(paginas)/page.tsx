@@ -61,6 +61,11 @@ const Home = () => {
         <div className="flex pt-16 gap-10">
           <Button onClick={() => setIsOpen(true)} label="classes" />
           <Button label="loja" />
+          <Link href={"/map"}>
+            <Button
+              label="mapa"
+            />
+          </Link>
           <Link href={"https://discord.gg/N7fjqsgHWW"}>
             <Button
               label="discord"
