@@ -1,0 +1,35 @@
+[
+  {
+    "nome": "guerreiro",
+    "dificuldade": 5,
+    "atributos": {
+      "vida": 9,
+      "defesa": 5,
+      "mana": 1,
+      "estamina": 5,
+      "dano": 5
+    }
+  },
+  {
+    "nome": "arqueiro",
+    "dificuldade": 1,
+    "atributos": {
+      "vida": 4,
+      "defesa": 2,
+      "mana": 1,
+      "estamina": 5,
+      "dano": 7
+    }
+  },
+  {
+    "nome": "mago",
+    "dificuldade": 3,
+    "atributos": {
+      "vida": 3,
+      "defesa": 1,
+      "mana": 7,
+      "estamina": 5,
+      "dano": 6
+    }
+  }
+]

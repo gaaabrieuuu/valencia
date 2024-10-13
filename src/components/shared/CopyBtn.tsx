@@ -14,7 +14,7 @@ const CopyBtn = (props: CopyBtnProps) => {
   return (
     <div
       onClick={() => {
-        navigator.clipboard.writeText(props.hoveringLabel);
+        navigator.clipboard.writeText(props.label);
         setIsCopied(true);
       }}
       onMouseEnter={() => setHovering(true)}

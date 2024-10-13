@@ -1,17 +1,21 @@
 export interface ButtonProps {
-  className?: React.ComponentProps<"div">["className"];
+  className?: React.ComponentProps<"button">["className"];
   label: string;
+  children?: React.ReactNode;
   onClick?: () => void;
+  disabled?: boolean;
 }
 
 const Button = (props: ButtonProps) => {
   return (
-    <div
+    <button
+      disabled={props.disabled}
       onClick={props.onClick}
-      className={`button w-36 h-14 rounded-md uppercase ${props.className}`}
+      className={`button min-[320px]:w-6/12 md:w-36 h-14 rounded-md uppercase flex flex-col ${props.className}`}
     >
       <span>{props.label}</span>
-    </div>
+      {props.children}
+    </button>
   );
 };
 
